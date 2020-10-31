@@ -27,8 +27,8 @@ For example:
 - HTTP_GET: get list of users from service.
 ```
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<IEnumerable<UserAccount>> result = Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
-  .ConfigureAwait(true);
+ApiResponse<IEnumerable<UserAccount>> result =
+    Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list").ConfigureAwait(true);
 ````
 
 - HTTP_POST: post User object content to service.
