@@ -2,10 +2,10 @@
 The .NET library for common RESTful APIs.
 
 <p align="center">
-  <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/527096/images/5526835/gears.gif">
+  <img height="300" src='https://webstockreview.net/images/gear-clipart-setting-5.gif'/>
 </p>
 <p align="center">
-  Source: image from Slides.com
+  Source: image from webstockreview.net
 </p>
 
 ### Installation
