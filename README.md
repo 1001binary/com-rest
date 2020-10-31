@@ -1,4 +1,4 @@
-# com-rest
+# Com-Rest
 The .NET library for common RESTful APIs.
 
 ### Installation
