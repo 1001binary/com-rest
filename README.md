@@ -1,6 +1,13 @@
 # Com-Rest
 The .NET library for common RESTful APIs.
 
+<p align="center">
+  <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/527096/images/5526835/gears.gif">
+</p>
+<p align="center">
+  Source: image from Slides.com
+</p>
+
 ### Installation
 
 You can install ComRest via nuget.
