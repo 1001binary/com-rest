@@ -46,7 +46,7 @@ ApiResponse<bool> result = Await RestService.PutAsync("[YOUR_BASE_API]/api/user/
   .ConfigureAwait(true);
 ````
 
-- HTTP_PUT: delete User object content to service.
+- HTTP_DELETE: delete User object content from service.
 ```
 var userId = 1;
 // NOTE: make sure your service returns ApiResponse<TData>
