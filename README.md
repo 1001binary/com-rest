@@ -2,7 +2,7 @@
 The .NET library for common RESTful APIs.
 
 <p align="center">
-  <img src='https://cdn.lowgif.com/full/88e2332e965be77b-.gif'/>
+  <img height="200" src='https://cdn.lowgif.com/full/88e2332e965be77b-.gif'/>
 </p>
 <p align="center">
   Source: image from lowgif.com
