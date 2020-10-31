@@ -27,7 +27,7 @@ For example:
 - HTTP_GET: get list of users from service.
 ```
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<IEnumerable<UserAccount>> result = Await RestService.GetAsync("[YOUR_BASE_API]/api/user/list")
+ApiResponse<IEnumerable<UserAccount>> result = Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
   .ConfigureAwait(true);
 ````
 
@@ -41,7 +41,7 @@ var user = new User()
     PwdSalt = "fdsafddfassfdfdssfddfsf"
 };
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<bool> result = Await RestService.PostAsync("[YOUR_BASE_API]/api/user/register", user)
+ApiResponse<string> result = Await RestService.PostAsync<string>("[YOUR_BASE_API]/api/user/register", user)
   .ConfigureAwait(true);
 ````
 
@@ -49,7 +49,7 @@ ApiResponse<bool> result = Await RestService.PostAsync("[YOUR_BASE_API]/api/user
 ```
 user.FirstName = "Thomas";
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<bool> result = Await RestService.PutAsync("[YOUR_BASE_API]/api/user/save", user)
+ApiResponse<bool> result = Await RestService.PutAsync<bool>("[YOUR_BASE_API]/api/user/save", user)
   .ConfigureAwait(true);
 ````
 
@@ -57,7 +57,7 @@ ApiResponse<bool> result = Await RestService.PutAsync("[YOUR_BASE_API]/api/user/
 ```
 var userId = 1;
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<bool> result = Await RestService.DeleteAsync($"[YOUR_BASE_API]/api/user/delete/{userId}")
+ApiResponse<bool> result = Await RestService.DeleteAsync<bool>($"[YOUR_BASE_API]/api/user/delete/{userId}")
   .ConfigureAwait(true);
 ````
 
