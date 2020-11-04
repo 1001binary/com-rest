@@ -31,11 +31,12 @@ For example:
 - HTTP_GET: get list of users from service.
 ```csharp
 IEnumerable<UserAccount> result =
-    Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list").ConfigureAwait(true);
+    Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
+      .ConfigureAwait(true);
 // NOTE: make sure your service returns ApiResponse<TData>
 ApiResponse<IEnumerable<UserAccount>> result = 
-  Await RestService.GetApiResponseAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
-    .ConfigureAwait(true);
+    Await RestService.GetApiResponseAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
+      .ConfigureAwait(true);
 ````
 
 - HTTP_POST: post User object content to service.
