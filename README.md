@@ -75,7 +75,11 @@ ApiResponse<bool> result =
       .ConfigureAwait(true);
 ````
 
-### Copyright and License
-&copy; Copyright 2020 by 1001binary.
+The ApiResponse class serves as a standard response result from Web Service.
 
-MIT License
+- IsSuccess: whether operation on Web Service is successful.
+- Result: returned data.
+- Exception: an exception on Web Service.
+
+### Copyright and License
+&copy; Copyright 2020 by 1001binary - MIT License
