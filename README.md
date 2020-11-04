@@ -29,7 +29,7 @@ Install-Package ComRest
 For example:
 
 - HTTP_GET: get list of users from service.
-```
+```csharp
 IEnumerable<UserAccount> result =
     Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list").ConfigureAwait(true);
 // NOTE: make sure your service returns ApiResponse<TData>
@@ -38,7 +38,7 @@ ApiResponse<IEnumerable<UserAccount>> result =
 ````
 
 - HTTP_POST: post User object content to service.
-```
+```csharp
 var user = new User()
 {
     FirstName = "Jimmy",
@@ -53,7 +53,7 @@ ApiResponse<string> result = Await RestService.PostApiResponseAsync<string>("[YO
 ````
 
 - HTTP_PUT: save User object content to service.
-```
+```csharp
 user.FirstName = "Thomas";
 bool result = Await RestService.PutAsync<bool>("[YOUR_BASE_API]/api/user/save", user)
 // NOTE: make sure your service returns ApiResponse<TData>
@@ -62,7 +62,7 @@ ApiResponse<bool> result = Await RestService.PutApiResponseAsync<bool>("[YOUR_BA
 ````
 
 - HTTP_DELETE: delete User object content from service.
-```
+```csharp
 var userId = 1;
 bool result = Await RestService.DeleteAsync<bool>($"[YOUR_BASE_API]/api/user/delete/{userId}")
 // NOTE: make sure your service returns ApiResponse<TData>
