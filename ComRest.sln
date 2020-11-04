@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ComRest", "ComRest\ComRest.vbproj", "{A9EFF53B-7635-4353-8AAB-B187311696B3}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ComRest", "ComRest\ComRest.vbproj", "{A9EFF53B-7635-4353-8AAB-B187311696B3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ComRest.Tests", "ComRest.Tests\ComRest.Tests.vbproj", "{CCEB6E9A-97AE-4304-89C7-5769A0DF0809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A9EFF53B-7635-4353-8AAB-B187311696B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9EFF53B-7635-4353-8AAB-B187311696B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9EFF53B-7635-4353-8AAB-B187311696B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCEB6E9A-97AE-4304-89C7-5769A0DF0809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEB6E9A-97AE-4304-89C7-5769A0DF0809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEB6E9A-97AE-4304-89C7-5769A0DF0809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEB6E9A-97AE-4304-89C7-5769A0DF0809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

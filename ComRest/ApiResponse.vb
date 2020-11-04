@@ -1,6 +1,6 @@
-﻿Public MustInherit Class ApiResponse
+﻿Public Class ApiResponse
 
-    Sub New()
+    Sub New() ' To deserialize.
 
     End Sub
 
@@ -16,14 +16,13 @@ End Class
 Public Class ApiResponse(Of T)
     Inherits ApiResponse
 
-    Sub New()
+    Sub New() ' To deserialize.
 
     End Sub
 
     Sub New(IsSuccess As Boolean, Result As T, Exception As Exception)
-        Me.IsSuccess = IsSuccess
+        MyBase.New(IsSuccess, Exception)
         Me.Result = Result
-        Me.Exception = Exception
     End Sub
 
     Property Result As T
