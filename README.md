@@ -33,8 +33,9 @@ For example:
 IEnumerable<UserAccount> result =
     Await RestService.GetAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list").ConfigureAwait(true);
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<IEnumerable<UserAccount>> result =
-    Await RestService.GetApiResponseAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list").ConfigureAwait(true);
+ApiResponse<IEnumerable<UserAccount>> result = 
+    Await RestService.GetApiResponseAsync<IEnumerable<UserAccount>>("[YOUR_BASE_API]/api/user/list")
+        .ConfigureAwait(true);
 ````
 
 - HTTP_POST: post User object content to service.
@@ -48,8 +49,9 @@ var user = new User()
 };
 string result = Await RestService.PostAsync<string>("[YOUR_BASE_API]/api/user/register", user)
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<string> result = Await RestService.PostApiResponseAsync<string>("[YOUR_BASE_API]/api/user/register", user)
-  .ConfigureAwait(true);
+ApiResponse<string> result =
+    Await RestService.PostApiResponseAsync<string>("[YOUR_BASE_API]/api/user/register", user)
+      .ConfigureAwait(true);
 ````
 
 - HTTP_PUT: save User object content to service.
@@ -57,8 +59,9 @@ ApiResponse<string> result = Await RestService.PostApiResponseAsync<string>("[YO
 user.FirstName = "Thomas";
 bool result = Await RestService.PutAsync<bool>("[YOUR_BASE_API]/api/user/save", user)
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<bool> result = Await RestService.PutApiResponseAsync<bool>("[YOUR_BASE_API]/api/user/save", user)
-  .ConfigureAwait(true);
+ApiResponse<bool> result =
+    Await RestService.PutApiResponseAsync<bool>("[YOUR_BASE_API]/api/user/save", user)
+      .ConfigureAwait(true);
 ````
 
 - HTTP_DELETE: delete User object content from service.
@@ -66,8 +69,9 @@ ApiResponse<bool> result = Await RestService.PutApiResponseAsync<bool>("[YOUR_BA
 var userId = 1;
 bool result = Await RestService.DeleteAsync<bool>($"[YOUR_BASE_API]/api/user/delete/{userId}")
 // NOTE: make sure your service returns ApiResponse<TData>
-ApiResponse<bool> result = Await RestService.DeleteApiResponseAsync<bool>($"[YOUR_BASE_API]/api/user/delete/{userId}")
-  .ConfigureAwait(true);
+ApiResponse<bool> result =
+    Await RestService.DeleteApiResponseAsync<bool>($"[YOUR_BASE_API]/api/user/delete/{userId}")
+      .ConfigureAwait(true);
 ````
 
 ### Copyright and License
